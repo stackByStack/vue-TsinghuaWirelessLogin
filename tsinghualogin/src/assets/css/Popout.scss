@@ -1,0 +1,226 @@
+$usage_bar: 280px;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+// body {
+//     font-family: "Microsoft YaHei", "SimHei", "Apple LiGothic Medium";
+//     background: #dadbdc url(../assets/image/wireless/background.png) repeat-x top;
+//     min-width: 768px;
+// }
+
+#popup {
+    min-width: 640px;
+    min-height: 480px;
+    background: #e6e6e6 url(../assets/image/wireless/popup_bg.png) no-repeat top right;
+}
+
+#panel {
+    margin: auto;
+}
+
+#popup #panel {
+    position: relative;
+    width: 640px;
+    height: 480px;
+    background: url(../assets/image/wireless/popup_shadow.png) no-repeat 48px 344px;
+}
+
+#popup .greeting {
+    position: absolute;
+    top: 64px;
+    left: 48px;
+    width: 512px;
+    height: 224px;
+    background: #e64e2e url(../assets/image/wireless/popup_greeting.png) no-repeat 30px 46px;
+}
+
+
+.triangleUnderGreet {
+    position: absolute;
+    top: 304px;
+    left: 32px;
+    border-color: #E64E2E transparent;
+    border-width: 48px 48px 0 0;
+}
+
+#popup .triangleUnderGreet {
+    left: 80px;
+    top: 288px;
+}
+
+#popup .corner {
+    position: absolute;
+    top: 288px;
+    left: 592px;
+    border-color: transparent #CCCCCC;
+    border-width: 16px 0 0 16px;
+}
+
+.corner,
+.triangleUnderGreet {
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#popup #info {
+    position: absolute;
+    top: 32px;
+    left: 304px;
+    width: 464px;
+    height: 304px;
+    background: #F2F2F2;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#popup #info {
+    top: 96px;
+    left: 176px;
+    padding: 32px;
+    width: 352px;
+    height: 208px;
+}
+
+#info .user_name {
+    float: left;
+    color: #E64E2E;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 34px;
+    font-weight: lighter;
+}
+
+#info #info_content {
+    float: left;
+    margin-top: -8px;
+}
+
+#info .label_text {
+    clear: left;
+    float: left;
+    width: 56px;
+    height: 32px;
+    margin-top: 22px;
+    text-align: right;
+    font-size: 13px;
+}
+
+#info .content_text {
+    float: left;
+    margin: 24px 0 0 20px;
+    padding-top: 4px;
+    height: 28px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+#info .usage_bar {
+    position: relative;
+    float: left;
+    margin: 24px 0 0 16px;
+    padding: 0;
+    width: 280px;
+    height: 32px;
+    background: url(../assets/image/usage_bg.gif) repeat-y;
+}
+
+.usage_bar .calibration {
+    position: absolute;
+    top: -16px;
+    right: 14px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+    color: #969696;
+}
+
+.calibration li {
+    float: right;
+    width: 53px;
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.usage_bar #usage_value {
+    float: left;
+    height: 32px;
+    max-width: $usage_bar;
+    background: #FBB03B;
+}
+
+#info .usage_bar .content_text {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
+#info .content_text .unit {
+    margin-left: 8px;
+    color: #5C5C5C;
+}
+
+#popup .disconnectBar {
+    position: absolute;
+    top: 304px;
+    right: 32px;
+    width: 208px;
+    height: 80px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.disconnect {
+    margin: 16px;
+    width: 174px;
+    height: 46px;
+    border: #B2AABE solid 1px;
+    background: #C0BDCC url(../assets/image/disconnect.png) no-repeat center 0;
+    overflow: hidden;
+}
+
+#popup #links {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    width: 254px;
+}
+
+#links li {
+    float: left;
+    margin-right: 12px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#links li a {
+    display: block;
+    padding: 16px 0 0 26px;
+    height: 16px;
+}
+
+#links #link_info {
+    background: url(../assets/image/wireless/popup_info.gif) no-repeat 2px 2px;
+}
+
+#links #lib {
+    background: url(../assets/image/wireless/popup_lib.gif) no-repeat 2px 2px;
+}
+
+#links #learn {
+    background: url(../assets/image/wireless/popup_learn.gif) no-repeat 4px 1px;
+}
+
+#links #mail {
+    background: url(../assets/image/wireless/popup_mail.gif) no-repeat 0 1px;
+}
